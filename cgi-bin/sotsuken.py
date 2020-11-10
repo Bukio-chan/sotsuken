@@ -23,7 +23,7 @@ print ("Content-Type: text/html")
 print()
 
 print ("<html><head>")
-print ('<link href="http://192.168.10.6:8080/style.css" media="all" rel="stylesheet"/>')
+print ('<link href="https://bukio-chan.github.io/sotsuken/style.css" media="all" rel="stylesheet"/>')
 print ("</head><body>")
 form = cgi.FieldStorage()
 form_check = 2
@@ -111,7 +111,7 @@ def wait_time_total(order,attraction_list,time_):
     else:
         return wait*10
 
-img = imread("http://192.168.10.6:8080/image/USJ_map.png")
+img = imread("https://bukio-chan.github.io/sotsuken/image/USJ_map.png")
 
 generation = 50 #世代数
 population = generation
@@ -324,7 +324,7 @@ def plot_route(route, title=None): #表示
     plt.subplots_adjust(left=0, right=0.975, bottom=0.1, top=0.9) #余白調整
     plt.savefig("image/USJ_route.png", facecolor="azure") #画像で保存
 
-    print ('<br><img src="http://192.168.10.6:8080/image/USJ_route.png"/>')
+    print ('<br><img src="https://bukio-chan.github.io/sotsuken/image/USJ_route.png"/>')
 
 def supple_dist(route): #おまけの距離の計算
     path_distance = 0
