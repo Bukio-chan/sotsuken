@@ -392,9 +392,9 @@ def solve(cities, population_size, elite_size, mutation_rate, generations):
 #スタート時間取得
 time = 0 #スタート時間
 if form["start_time"].value == "100":
-  if now.hour >= 8 and now.minute <= 21:
+  if now.hour >= 8 and now.hour <= 21:
     time = start_time(now.hour,now.minute)
-  else:
+  elif form_check == 2:
     print ("<h2>ERROR </h2>")
     print ('<div class="exclamation1">　時間を選択してね！</div>')
     form_check = 1
