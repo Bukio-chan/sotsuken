@@ -23,7 +23,7 @@ print ("Content-Type: text/html")
 print()
 
 print ("<html><head>")
-print ('<link href="https://bukio-chan.github.io/sotsuken/style.css" media="all" rel="stylesheet"/>')
+print ('<link href="https://nameless-eyrie-94218.herokuapp.com/sotsuken/style.css" media="all" rel="stylesheet"/>')
 print ("</head><body>")
 form = cgi.FieldStorage()
 form_check = 2
@@ -111,7 +111,7 @@ def wait_time_total(order,attraction_list,time_):
     else:
         return wait*10
 
-img = imread("https://bukio-chan.github.io/sotsuken/image/USJ_map.png")
+img = imread("https://nameless-eyrie-94218.herokuapp.com/sotsuken/image/USJ_map.png")
 
 generation = 50 #世代数
 population = generation
