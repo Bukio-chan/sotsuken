@@ -1,1 +1,2 @@
-"web: $(basename `pwd`)" 
+web: $(basename `pwd`)
+web: gunicorn bukio-chan : app
