@@ -1,2 +1,1 @@
-web: $(basename `pwd`)
-web: gunicorn bukio-chan : app
+web: python main.py
